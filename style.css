@@ -1,6 +1,6 @@
 :root {
   --primary-color: #161616;
-  --secondary-color: #ffffff;
+  --main-color: #f5e768;
   --heading-font: "Playfair Display", serif;
   --body-font: "Poppins", sans-serif;
 }
@@ -10,33 +10,80 @@ h1 {
   color: black;
   font-weight: bold;
   font-size: 36px;
-  line-height: 5px;
-  color: var(--secondary-color);
+  line-height: 2px;
+  color: var(--primary-color);
+  position: relative;
+  left: 80px;
 }
+
 h2 {
   font-family: var(--body-font);
   font-weight: normal;
   font-size: 20px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  position: relative;
+  left: 80px;
 }
 .wrapper {
-  background: var(--primary-color);
-  padding: 160px 20px;
+  background: var(--main-color);
+  padding-top: 93px;
+  padding-bottom: 93px;
+  padding-right: 0;
+  padding-left: 0;
   text-transform: uppercase;
+}
+.first {
+  margin-bottom: 25px;
+}
+
+.poet{
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .btn-nonactive {
-  background: #fef200;
+  background: var(--primary-color);
   font-family: var(--heading-font);
   text-decoration: none;
   border-radius: 1px;
-  color: var(--primary-color);
+  color: var(--main-color);
   font-size: 12px;
   padding: 5px 5px;
-  margin-top: 18px;
+  margin-top: 10px;
+  position: relative;
+  left: 40px;
 }
 
-.mic{
-    color: var(--primary-color);
-    padding-left: 3px;
+@media (max-width: 600px) {
+  h2 {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+
+  .btn-nonactive {
+    font-size: 7px;
+    left: 90px;
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    position: relative;
+    left: 150px;
+  }
+  h2 {
+    position: relative;
+    left: 150px;
+  }
+  .btn-nonactive {
+    position: relative;
+    left: 150px;
+  }
+  .wrapper {
+   padding-top: 93px;
+  padding-bottom: 93px;
+  padding-right: 0;
+  padding-left: 0;
+}
 }
