@@ -1,89 +1,75 @@
 :root {
-  --primary-color: #161616;
+  --primary-color: rgb(207, 167, 91);
   --main-color: #f5e768;
   --heading-font: "Playfair Display", serif;
   --body-font: "Poppins", sans-serif;
 }
+.whole {
+  background: rgb(241, 241, 241);
+  padding: 20px;
+}
 
+.wrapper {
+  background-color: white;
+  padding: 15px;
+}
 h1 {
   font-family: var(--heading-font);
-  color: black;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 2px;
-  color: var(--primary-color);
+  font-size: 63px;
   position: relative;
-  left: 80px;
+  top: 200px;
+  left: 50px;
+}
+.second-wrapper,
+.third-wrapper {
+  background-color: var(--main-color);
+  padding: 15px;
 }
 
 h2 {
   font-family: var(--body-font);
   font-weight: normal;
-  font-size: 20px;
-  color: var(--primary-color);
-  position: relative;
-  left: 80px;
+  font-size: 30px;
 }
-.wrapper {
-  background: var(--main-color);
-  padding-top: 93px;
-  padding-bottom: 93px;
-  padding-right: 0;
-  padding-left: 0;
-  text-transform: uppercase;
-}
-.first {
-  margin-bottom: 25px;
-}
-
-.poet{
-    margin-left: 0;
-    padding-left: 0;
+p {
+  font-family: var(--body-font);
+  font-weight: 1%;
+  font-size: 12px;
 }
 
 .btn-nonactive {
   background: var(--primary-color);
   font-family: var(--heading-font);
   text-decoration: none;
-  border-radius: 1px;
-  color: var(--main-color);
+  border-radius: 3px;
+  color: black;
   font-size: 12px;
   padding: 5px 5px;
-  margin-top: 10px;
-  position: relative;
-  left: 40px;
 }
 
 @media (max-width: 600px) {
-  h2 {
-    font-size: 10px;
-  }
-  h1 {
-    font-size: 18px;
+  .whole {
+    padding: 25px;
   }
 
-  .btn-nonactive {
-    font-size: 7px;
-    left: 90px;
-  }
-}
-@media (min-width: 600px) {
-  h1 {
-    position: relative;
-    left: 150px;
-  }
-  h2 {
-    position: relative;
-    left: 150px;
-  }
-  .btn-nonactive {
-    position: relative;
-    left: 150px;
-  }
   .wrapper {
-   padding-top: 93px;
-  padding-bottom: 93px;
-  padding-right: 0;
-  padding-left: 0;
-}
+    padding: 45px;
+  }
+  h1 {
+    font-size: 38px;
+    top: 100px;
+    left: -29px;
+  }
+  .second-wrapper,
+  .third-wrapper {
+    padding: 7.5px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 8px;
+  }
 }
