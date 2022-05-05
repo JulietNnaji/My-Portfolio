@@ -1,41 +1,29 @@
 :root {
-  --primary-color: rgb(207, 167, 91);
-  --main-color: #f5e768;
+  --primary-color: #f0cfab;
+  --main-color: #ffd194;
   --heading-font: "Playfair Display", serif;
   --body-font: "Poppins", sans-serif;
 }
 .whole {
-  background: rgb(241, 241, 241);
-  padding: 20px;
+  background: #70e1f5;
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+  background: linear-gradient(to right, #ffd194, #70e1f5);
 }
 
 .wrapper {
-  background-color: white;
-  padding: 15px;
+  background-color: #ffffff;
 }
 h1 {
   font-family: var(--heading-font);
   font-weight: bold;
-  font-size: 63px;
-  position: relative;
-  top: 200px;
-  left: 50px;
-}
-.second-wrapper,
-.third-wrapper {
-  background-color: var(--main-color);
-  padding: 15px;
 }
 
 h2 {
   font-family: var(--body-font);
   font-weight: normal;
-  font-size: 30px;
 }
 p {
   font-family: var(--body-font);
-  font-weight: 1%;
-  font-size: 12px;
 }
 
 .btn-nonactive {
@@ -47,29 +35,85 @@ p {
   font-size: 12px;
   padding: 5px 5px;
 }
-
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .whole {
-    padding: 25px;
+    padding: 150px;
   }
 
   .wrapper {
-    padding: 45px;
+    padding: 75px;
   }
   h1 {
-    font-size: 38px;
-    top: 100px;
-    left: -29px;
-  }
-  .second-wrapper,
-  .third-wrapper {
-    padding: 7.5px;
+    font-size: 45px;
+    position: relative;
+    top: 200px;
+    left: -135px;
   }
 
   h2 {
+    font-size: 28px;
+    top: 150px;
+    left: -1px;
+    position: relative;
+    top: -45px;
+    right: 5px;
+  }
+  p {
     font-size: 15px;
+  }
+  .image-container {
+    padding: 15px;
+    background: var(--main-color);
+    position: relative;
+    top: -75px;
+    left: 460px;
+  }
+  .image {
+    position: relative;
+    top: -100px;
+    right: -65px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .whole {
+    padding: 50px;
+  }
+
+  .wrapper {
+    padding: 35px;
+  }
+  h1 {
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+    left: -75px;
+  }
+
+  h2 {
+    font-size: 12px;
+    top: 150px;
+    left: -1px;
+    position: relative;
+    top: -5px;
+    right: 5px;
   }
   p {
     font-size: 8px;
+  }
+  .image-container {
+    padding: 10px;
+    background: var(--main-color);
+    position: relative;
+    top: -10px;
+    right: -60px;
+  }
+  .image {
+    position: relative;
+    top: -30px;
+    right: -25px;
+    width: 300px;
   }
 }
