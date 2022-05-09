@@ -12,7 +12,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading-font);
 }
 
@@ -128,13 +129,28 @@ footer {
   .email {
     font-size: 12px;
   }
+  .heading {
+    font-size: 25px;
+  }
+  .work-heading {
+    font-size: 25px;
+  }
   .phone-number {
     font-size: 12px;
+    margin-top: 50px;
   }
   .location {
     font-size: 12px;
+    margin-top: 50px;
   }
   .contact {
     font-size: 26px;
+    margin-bottom: 50px;
+  }
+  .mail {
+    font-size: 20px;
+  }
+  .code {
+    font-size: 14px;
   }
 }
