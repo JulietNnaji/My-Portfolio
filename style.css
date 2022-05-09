@@ -75,3 +75,38 @@ p {
   justify-content: space-evenly;
 }
 
+.email {
+  text-decoration: none;
+  color: black;
+  font-family: var(--body-font);
+  font-size: 15px;
+}
+.email {
+  margin-top: 200px;
+}
+.phone-number {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+@media (max-width: 600px) {
+  .email {
+    font-size: 12px;
+  }
+  .phone-number {
+    font-size: 12px;
+  }
+  .location {
+    font-size: 12px;
+  }
+}
+.social-media a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.location {
+  margin-top: 200px;
+}
