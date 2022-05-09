@@ -16,7 +16,8 @@ h2 {
   font-family: var(--heading-font);
 }
 
-p {
+p,
+div {
   font-family: var(--body-font);
   font-size: 15px;
 }
@@ -42,20 +43,6 @@ p {
   justify-content: center;
 }
 
-.btn-primary {
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: black;
-  cursor: pointer;
-  display: block;
-  margin: 20px;
-  font-family: var(--body-font);
-  text-transform: capitalize;
-  text-align: center;
-}
-
 .btn-light {
   text-decoration: none;
   border-radius: 4px;
@@ -68,6 +55,11 @@ p {
   text-transform: capitalize;
   text-align: center;
   font-family: var(--body-font);
+  transition: all 100ms ease-in-out;
+}
+
+.btn-light:hover {
+  background: var(--primary-color);
 }
 
 .paragraph {
@@ -89,6 +81,49 @@ p {
   margin-bottom: 50px;
   margin-left: 10px;
 }
+
+.social-media a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  transition: all 100ms ease-in-out;
+}
+.social-media a:hover {
+  color: var(--primary-color);
+}
+
+.location {
+  margin-top: 200px;
+}
+
+.navbar-light {
+  background: #70e1f5;
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+.mail {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-family: var(--body-font);
+}
+
+footer .mail:hover {
+  color: black;
+  background: var(--main-color);
+}
+
+.source-code {
+  text-decoration: none;
+  color: black;
+  font-family: var(--body-font);
+}
 @media (max-width: 600px) {
   .email {
     font-size: 12px;
@@ -99,20 +134,7 @@ p {
   .location {
     font-size: 12px;
   }
-}
-.social-media a {
-  text-decoration: none;
-  color: black;
-  font-size: 30px;
-  text-align: center;
-}
-
-.location {
-  margin-top: 200px;
-}
-
-.navbar-light{
-  background: #70e1f5;
-  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
-  background: linear-gradient(to right, #ffd194, #70e1f5);
+  .contact{
+    font-size: 26px;
+  }
 }
