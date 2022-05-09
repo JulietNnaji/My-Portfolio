@@ -114,7 +114,7 @@ footer {
   font-family: var(--body-font);
 }
 
-footer .mail:hover {
+.mail:hover {
   color: black;
   background: var(--main-color);
 }
@@ -134,7 +134,7 @@ footer .mail:hover {
   .location {
     font-size: 12px;
   }
-  .contact{
+  .contact {
     font-size: 26px;
   }
 }
